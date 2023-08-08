@@ -2,10 +2,6 @@
 
 <div align="center">
   <img src="./src/logo-black.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>CovidTrackr</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
