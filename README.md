@@ -177,7 +177,7 @@ I appreciate any contributions to enhance the web app. To contribute, please fol
 
 I would like to express my gratitude to the following individuals and organizations for their valuable contributions and support:
 
-[Cindy Shin:](https://www.behance.net/adagio07) For her exceptional design whose template is used for this project.
+[Nelson Sakwa:](https://www.behance.net/sakwadesignstudio) For his exceptional design whose template is used for this project.
 
 [Lilly Rum:](https://unsplash.com/@rumandraisin) For her images that is being used in the hero background.
 
