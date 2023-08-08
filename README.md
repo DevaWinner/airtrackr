@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./src/assets/logo-black.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/logo-black.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>CovidTrackr</b></h3>
@@ -55,11 +55,7 @@
 
 - **[Rockets_page]**
 - **[Missions_page]**
-- **[Add_reservation_for_rockets]**
-- **[Cancel_reservation_for_rockets]**
-- **[Join_space_mission]**
-- **[Leaving_space_mission]**
-- **[View_profile]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
