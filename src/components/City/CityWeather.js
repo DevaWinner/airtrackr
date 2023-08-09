@@ -23,18 +23,18 @@ function CityWeather({ city, aqi }) {
       weatherStatus = 'Unknown';
   }
 
-  const statusClassName = weatherStatus.toLowerCase().replace(' ', '-');
+  const statusClassName = weatherStatus.toLowerCase().replace(/\s+/g, '-');
 
   return (
-    <div className="city-weather flex">
+    <div className="flex">
       <h2>{city}</h2>
-      <div className="air-quality">
+      <div className="quality">
         <p className="quality">Air Quality:</p>
-        <span className={statusClassName}>{weatherStatus}</span>
+        <p className={statusClassName}>{weatherStatus}</p>
       </div>
-      <div className="quality-index">
+      <div className="index">
         <p className="quality-index-header">Air Quality Index(AQI):</p>
-        <span className={statusClassName}>{aqi}</span>
+        <p className={statusClassName}>{aqi}</p>
       </div>
     </div>
   );

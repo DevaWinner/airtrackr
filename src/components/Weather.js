@@ -29,16 +29,19 @@ const Weather = () => {
   }, [cityData]);
 
   return (
-    <div id="main-wrap">
+    <>
       <Nav onFilterChange={handleFilterChange} />
-      <section className="cities flex">
+      <div className="report-head">
+        <p>City Reports</p>
+      </div>
+      <section className="main">
         {filteredCities.map((city) => (
-          <Link className="flex" to={`city/${city.id}`} key={city.id}>
+          <Link className="city" to={`city/${city.id}`} key={city.id}>
             <CityWeather city={city.city} aqi={city.data.main.aqi} />
           </Link>
         ))}
       </section>
-    </div>
+    </>
   );
 };
 
