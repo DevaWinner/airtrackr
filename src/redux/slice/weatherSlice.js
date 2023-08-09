@@ -4,6 +4,7 @@ import { getCityData, getAirPollutionData } from '../../components/Api/api';
 
 const initialState = {
   cityList: [
+    'Africa',
     'Cairo',
     'Lagos',
     'Kinshasa',
@@ -20,6 +21,12 @@ const initialState = {
     'Uyo',
     'Abuja',
     'Dakar',
+    'Giza',
+    'Luanda',
+    'Harare',
+    'Kigali',
+    'Tunis',
+    'Abidjan',
   ],
   dataOfCities: [],
   isDataFetched: false,

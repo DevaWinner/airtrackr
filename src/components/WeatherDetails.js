@@ -15,18 +15,18 @@ const WeatherDetails = () => {
   const aqi = getCityAqiComponents(id, cityData);
 
   return (
-    <article className="air-details">
-      <nav className="air-details-nav flex">
+    <div className="page-detail">
+      <nav className="">
         <Link to="/">
           <i className="fa-solid fa-square-caret-left fa-xl" />
         </Link>
         <h2>{cityName}</h2>
       </nav>
-      <header className="intro">
+      <header className="">
         <h2>Air Concentration</h2>
       </header>
-      <section className="conc-header">Concentration in μg/m3</section>
-      <section className="conc-data">
+      <section className="">Concentration in μg/m3</section>
+      <section className="">
         {aqi.map((component) => (
           <DataDisplay
             key={component.dataname}
@@ -35,7 +35,7 @@ const WeatherDetails = () => {
           />
         ))}
       </section>
-    </article>
+    </div>
   );
 };
 
