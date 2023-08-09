@@ -6,7 +6,7 @@
 }
 
 .africa {
-  width: 40%;
+  width: 50%;
   height: auto;
 }
 
@@ -22,7 +22,7 @@
 
 .headline-city .quality,
 .headline-city .index {
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
 }
 

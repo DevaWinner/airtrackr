@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const DataDisplay = ({ name, value }) => (
-  <div className="data-component-wrap flex">
-    <div className="data-component-name">
+  <div className="detail-data flex">
+    <p className="data-name">
       <div dangerouslySetInnerHTML={{ __html: name }} />
-    </div>
-    <div className="data-component">
+    </p>
+    <p className="data-value">
       {value}
-    </div>
+    </p>
   </div>
 );
 
