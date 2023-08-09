@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=League+Spartan:wght@400;500;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,5 +7,19 @@
 }
 
 :root {
-  --primary-color: 
+  --primary-color: #4369b2;
+  --secondary-color: #f9f9f9;
+  --blue-1: #35548b;
+  --blue-2: #3e61a3;
+  --blue-3: #4a6fb9;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.flex {
+  display: flex;
 }

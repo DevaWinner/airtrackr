@@ -5,7 +5,6 @@ import { fetchCitiesWeatherData } from '../redux/slice/weatherSlice';
 import Nav from './Nav';
 import CityWeather from './City/CityWeather';
 import './styles/Weather.css';
-import arrow from './Assets/arrowRight.svg';
 
 const Weather = () => {
   const [filteredCities, setFilteredCities] = useState([]);
@@ -35,9 +34,6 @@ const Weather = () => {
       <section className="cities flex">
         {filteredCities.map((city) => (
           <Link className="flex" to={`city/${city.id}`} key={city.id}>
-            <div className="arrow-img">
-              <img className="arrow" src={arrow} alt="arrow" />
-            </div>
             <CityWeather city={city.city} aqi={city.data.main.aqi} />
           </Link>
         ))}

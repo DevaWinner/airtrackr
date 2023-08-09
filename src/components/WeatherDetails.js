@@ -12,18 +12,18 @@ const WeatherDetails = () => {
   const selectedCityData = cityData.find((city) => city.id === id);
   const cityName = selectedCityData?.city || '';
 
-  const aqi = getCityAqiComponents(id, cityData); // updated function call
+  const aqi = getCityAqiComponents(id, cityData);
 
   return (
     <article className="air-details">
       <nav className="air-details-nav flex">
         <Link to="/">
-          <h1 className="back">&#60;</h1>
+          <i className="fa-solid fa-square-caret-left fa-xl" />
         </Link>
         <h2>{cityName}</h2>
       </nav>
       <header className="intro">
-        <h2>Air Component Concentrations</h2>
+        <h2>Air Concentration</h2>
       </header>
       <section className="conc-header">Concentration in μg/m3</section>
       <section className="conc-data">

@@ -1,0 +1,36 @@
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5% 2%;
+  background-color: var(--blue-1);
+}
+
+nav h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.7rem;
+  color: var(--secondary-color);
+}
+
+.filter {
+  width: 50%;
+  height: auto;
+}
+
+.filter input {
+  width: 100%;
+  padding: 1.5%;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: var(--blue-1);
+}
+
+.africa {
+  width: 50%;
+  height: auto;
+}
+
+.africa img {
+  width: 100%;
+  height: auto;
+}
