@@ -16,17 +16,17 @@ const WeatherDetails = () => {
 
   return (
     <div className="page-detail">
-      <nav className="">
+      <div className="detail-nav flex">
         <Link to="/">
-          <i className="fa-solid fa-square-caret-left fa-xl" />
+          <i className="fa-solid fa-chevron-left fa-xl" />
         </Link>
         <h2>{cityName}</h2>
-      </nav>
-      <header className="">
-        <h2>Air Concentration</h2>
+      </div>
+      <header className="detail-header">
+        <h2>Air Information</h2>
       </header>
-      <section className="">Concentration in μg/m3</section>
-      <section className="">
+      <section className="detail-head">Air Concentration in μg/m3</section>
+      <section className="detail-list">
         {aqi.map((component) => (
           <DataDisplay
             key={component.dataname}
