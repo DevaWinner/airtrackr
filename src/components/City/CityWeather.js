@@ -29,11 +29,11 @@ function CityWeather({ city, aqi }) {
     <div className="city-weather flex">
       <h2>{city}</h2>
       <div className="air-quality">
-        <span className="quality">Quality of air:</span>
+        <p className="quality">Air Quality:</p>
         <span className={statusClassName}>{weatherStatus}</span>
       </div>
       <div className="quality-index">
-        <span className="quality-index-header">Quality index:</span>
+        <p className="quality-index-header">Air Quality Index(AQI):</p>
         <span className={statusClassName}>{aqi}</span>
       </div>
     </div>

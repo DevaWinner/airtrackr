@@ -6,7 +6,7 @@ function CityFilter({ onFilterChange }) {
     <div className="filter">
       <input
         type="text"
-        placeholder="Search city..."
+        placeholder="Enter city..."
         onChange={(e) => onFilterChange(e.target.value)}
       />
     </div>

@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import continents from './Assets/continents.png';
+import Africa from '../assets/africa.png';
 import CityFilter from './City/CityFilter';
+import './styles/Nav.css';
 
 const Nav = ({ onFilterChange }) => (
   <header>
-    <nav className="navbar flex">
-      <h1>AirVibe</h1>
+    <nav className="flex">
+      <h1>AirTrakr</h1>
       <CityFilter onFilterChange={onFilterChange} />
     </nav>
-    <div className="map-header flex">
-      <div className="map">
-        <img src={continents} alt="Asia Map" />
+    <div className="headline flex">
+      <div className="africa">
+        <img src={Africa} alt="Map of Africa" />
       </div>
-      <h2>Air Quality in Global Cities</h2>
+      <h2>African City Air Quality</h2>
     </div>
   </header>
 );
