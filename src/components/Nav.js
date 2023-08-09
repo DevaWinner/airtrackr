@@ -14,7 +14,7 @@ const Nav = ({ onFilterChange }) => (
       <div className="africa">
         <img src={Africa} alt="Map of Africa" />
       </div>
-      <h2>African City Air Quality</h2>
+      <h2>Air Quality in African Cities</h2>
     </div>
   </header>
 );
