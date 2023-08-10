@@ -3,38 +3,15 @@ import { v4 as uuidv4 } from 'uuid';
 import { getCityData, getAirPollutionData } from '../../components/Api/api';
 
 const initialState = {
-  cityList: [
-    'Cairo',
-    'Lagos',
-    'Kinshasa',
-    'Johannesburg',
-    'Nairobi',
-    'Addis Ababa',
-    'Alexandria',
-    'Casablanca',
-    'Cape Town',
-    'Durban',
-    'Accra',
-    'Algiers',
-    'Khartoum',
-    'Uyo',
-    'Abuja',
-    'Dakar',
-    'Giza',
-    'Luanda',
-    'Harare',
-    'Kigali',
-    'Tunis',
-    'Abidjan',
-  ],
+  cityList: ['Africa'],
   dataOfCities: [],
   isDataFetched: false,
 };
 
-const fetchCitiesWeatherData = createAsyncThunk(
-  'weather/fetchCitiesWeatherData',
+const fetchAfricaWeatherData = createAsyncThunk(
+  'weather/fetchAfricaWeatherData',
   async (_, { getState }) => {
-    const { cityList } = getState().weather;
+    const { cityList } = getState().africaWeather;
     const dataWeatherWithCities = await Promise.all(
       cityList.map(async (city) => {
         const cityData = await getCityData(city);
@@ -56,17 +33,17 @@ const fetchCitiesWeatherData = createAsyncThunk(
   },
 );
 
-const weatherSlice = createSlice({
-  name: 'weather',
+const africaWeatherSlice = createSlice({
+  name: 'africaWeather',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchCitiesWeatherData.fulfilled, (state, action) => {
+    builder.addCase(fetchAfricaWeatherData.fulfilled, (state, action) => {
       state.dataOfCities = action.payload;
       state.isDataFetched = true;
     });
   },
 });
 
-export default weatherSlice.reducer;
-export { fetchCitiesWeatherData };
+export default africaWeatherSlice.reducer;
+export { fetchAfricaWeatherData };

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiUniqueKey = '1d53f523936611daa637d368b71f28ca';
+const apiUniqueKey = 'ea6b0a18283199a51f2782c5a6f83c9b';
 
 const getCityData = async (city) => {
   try {
