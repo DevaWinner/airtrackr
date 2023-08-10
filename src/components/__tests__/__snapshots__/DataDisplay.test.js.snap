@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataDisplay should render DataDisplay component 1`] = `[Function]`;
+
+exports[`DataDisplay should render correctly with props 1`] = `
+<div>
+  <div
+    class="detail-data flex"
+  >
+    <p
+      class="data-name"
+    >
+      <div />
+    </p>
+    <p
+      class="data-value"
+    />
+  </div>
+</div>
+`;
