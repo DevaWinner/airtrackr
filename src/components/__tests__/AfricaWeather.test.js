@@ -10,7 +10,7 @@ describe('AfricaWeather', () => {
     render(
       <Provider store={store}>
         <AfricaWeather />
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByAltText('Map of Africa')).toBeInTheDocument();
