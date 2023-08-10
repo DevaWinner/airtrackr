@@ -20,4 +20,11 @@ describe('CityWeather', () => {
     const { getByText } = render(<CityWeather city="Chicago" aqi={2} />);
     expect(getByText('Great')).toHaveClass('great');
   });
+
+  it('should render Cities component', () => {
+    const city = 'Cairo';
+    const aqi = 1;
+    render(<CityWeather city={city} aqi={aqi} />);
+    expect(CityWeather).toMatchSnapshot();
+  });
 });
