@@ -7,7 +7,7 @@ describe('DataDisplay', () => {
     const dataname = 'NO';
     const data = '2';
     const { container } = render(<DataDisplay dataname={dataname} data={data} />);
-    
+
     expect(container).toMatchSnapshot();
   });
 });

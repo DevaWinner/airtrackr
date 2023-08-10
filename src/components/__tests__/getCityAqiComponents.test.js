@@ -1,6 +1,6 @@
-import AqiDetails from '../AqiDetails';
+import getCityAqiComponents from '../airqualityindex/getCityAqiComponents';
 
-describe('AqiDetails', () => {
+describe('getCityAqiComponents', () => {
   it('should return updated components for valid cityId', () => {
     const cityId = '54ae52b2-122f-4f43-9a30-1cee1f4b0867';
     const cityData = [
@@ -21,7 +21,7 @@ describe('AqiDetails', () => {
       },
     ];
 
-    const updatedComponents = AqiDetails(cityId, cityData);
+    const updatedComponents = getCityAqiComponents(cityId, cityData);
 
     const expectedComponents = [
       { dataname: 'CO', data: '1' },
@@ -51,7 +51,14 @@ describe('AqiDetails', () => {
       },
     ];
 
-    const updatedComponents = AqiDetails(cityId, cityData);
+    const updatedComponents = getCityAqiComponents(cityId, cityData);
+    expect(updatedComponents).toEqual([]);
+  });
+
+  it('should handle missing city data', () => {
+    const cityId = '54ae52b2-122f-4f43-9a30-1cee1f4b0867';
+    const cityData = [];
+    const updatedComponents = getCityAqiComponents(cityId, cityData);
     expect(updatedComponents).toEqual([]);
   });
 });
