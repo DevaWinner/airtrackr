@@ -7,8 +7,14 @@ const Nav = ({ onFilterChange }) => (
   <header>
     <nav className="flex">
       <h1>AirTrakr</h1>
-      <CityFilter onFilterChange={onFilterChange} />
+      <div className="nav-icons flex">
+        <i className="fa-solid fa-microphone" />
+        <i className="fa-solid fa-gear" />
+      </div>
     </nav>
+    <div className="filter flex">
+      <CityFilter onFilterChange={onFilterChange} />
+    </div>
   </header>
 );
 
