@@ -1,17 +1,28 @@
 .detail-nav {
-  padding: 4% 3%;
-  gap: 30%;
+  padding: 5% 3%;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--blue-1);
 }
 
-.detail-nav i {
+.back-container {
+  width: 10%;
+}
+
+.back {
   font-size: 1.7rem;
 }
 
 .detail-nav h2 {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 900;
+}
+
+.detail-icons {
+  font-size: 1.1rem;
+  width: 20%;
+  justify-content: space-between;
+  padding-right: 2%;
 }
 
 a {

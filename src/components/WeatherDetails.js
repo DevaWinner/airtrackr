@@ -17,10 +17,14 @@ const WeatherDetails = () => {
   return (
     <div className="page-detail">
       <div className="detail-nav flex">
-        <Link to="/">
-          <i className="fa-solid fa-chevron-left fa-xl" />
+        <Link to="/" className="back-container">
+          <i className="fa-solid fa-chevron-left fa-xl back" />
         </Link>
         <h2>{cityName}</h2>
+        <div className="detail-icons flex">
+          <i className="fa-solid fa-microphone" />
+          <i className="fa-solid fa-gear" />
+        </div>
       </div>
       <header className="detail-header">
         <h2>Air Information</h2>

@@ -1,7 +1,7 @@
 nav {
   justify-content: space-between;
   align-items: center;
-  padding: 4% 3%;
+  padding: 5% 3%;
   background-color: var(--blue-1);
 }
 
@@ -12,6 +12,7 @@ nav h1 {
 }
 
 .nav-icons {
+  font-size: 1.1rem;
   width: 20%;
   justify-content: space-between;
   padding-right: 2%;
