@@ -14,8 +14,9 @@ const Weather = () => {
   const dispatch = useDispatch();
 
   const handleFilterChange = (filterText) => {
-    // eslint-disable-next-line max-len
-    const filtered = cityData.filter((city) => city.city.toLowerCase().includes(filterText.toLowerCase()));
+    const filtered = cityData.filter(
+      (city) => city.city.toLowerCase().includes(filterText.toLowerCase()),
+    );
     setFilteredCities(filtered);
   };
 
