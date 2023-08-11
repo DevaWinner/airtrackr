@@ -27,7 +27,10 @@ function CityWeather({ city, aqi }) {
 
   return (
     <div className="detail flex">
-      <h2>{city}</h2>
+      <div className="city-head flex">
+        <h2>{city}</h2>
+        <i className="fa-regular fa-circle-right" />
+      </div>
       <div className="quality">
         <p className="quality">Air Quality:</p>
         <p className={statusClassName}>{weatherStatus}</p>

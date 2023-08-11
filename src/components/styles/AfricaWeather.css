@@ -28,10 +28,17 @@
   gap: 1rem;
 }
 
-.headline-city h2 {
+.headline-city .city-head {
+  justify-content: flex-end;
+}
+
+.headline-city .city-head h2 {
   font-size: 2rem;
   font-weight: 900;
-  text-align: right;
+}
+
+.headline-city i {
+  display: none;
 }
 
 .headline-city p {
