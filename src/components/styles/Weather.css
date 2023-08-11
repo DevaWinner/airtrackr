@@ -1,0 +1,87 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--blue-1);
+}
+
+.report-head {
+  padding: 2%;
+  background-color: var(--blue-1);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.report-head p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.city {
+  padding: 5%;
+  color: var(--secondary-color);
+}
+
+.city:nth-child(2),
+.city:nth-child(3),
+.city:nth-child(6),
+.city:nth-child(7),
+.city:nth-child(10),
+.city:nth-child(11),
+.city:nth-child(14),
+.city:nth-child(15),
+.city:nth-child(18),
+.city:nth-child(19),
+.city:nth-child(22),
+.city:nth-child(23),
+.city:nth-child(26) {
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.city > div {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.city-head {
+  justify-content: space-between;
+}
+
+.city h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.city p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.excellent {
+  color: #0c6;
+}
+
+.great {
+  color: #f90; /* Change to a shade of orange */
+  font-weight: bold;
+}
+
+.good {
+  color: #b72eee;
+  font-weight: bold;
+}
+
+.fair {
+  color: #ffcc29;
+  font-weight: bold;
+}
+
+.poor {
+  color: #ff4d4d;
+  font-weight: bold;
+}
