@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./src/logo-black.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/assets/logo-black.png" alt="logo" width="140"  height="auto" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -12,6 +12,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -28,9 +29,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [CovidTrackr] <a name="about-project"></a>
+# 📖 [AirTrackr] <a name="about-project"></a>
 
-**[CovidTrackr]** is a dynamic web-based COVID-19 tracking app powered by data from covid-api.com API. I helps users stay informed with real-time updates on cases by country, sort and filter information effortlessly. Your go-to tool for monitoring the global COVID-19 situation.
+is a dynamic web-based air tracking app powered by data from openweather API. It helps users stay informed with real-time updates on air condition in African cities, sort and filter information effortlessly. Your go-to tool for monitoring Africa air situation.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,11 +50,18 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Rockets_page]**
-- **[Missions_page]**
-
+- **Home Dashboard**
+- **City detail page**
+- **Search for cities**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [🔗 Live Demo Link](https://airtrackr.onrender.com/)
+- [📹 Video Demo Link](https://www.loom.com/share/634e31c99f2b4c508c0dd16a02b3013c)
 
 <!-- GETTING STARTED -->
 
@@ -77,7 +85,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:DevaWinner/space-travelers-hub.git
+  git clone git@github.com:DevaWinner/airtrackr.git
 ```
 
 ### Install
@@ -143,7 +151,7 @@ Your app is ready to be deployed!
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/DevaWinner/space-travelers-hub/issues).
+Feel free to check the [issues page](https://github.com/DevaWinner/airtrackr/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,10 +179,7 @@ I would like to express my gratitude to the following individuals and organizati
 
 [Nelson Sakwa:](https://www.behance.net/sakwadesignstudio) For his exceptional design whose template is used for this project.
 
-[Lilly Rum:](https://unsplash.com/@rumandraisin) For her images that is being used in the hero background.
-
-[Freepik.com](https://www.freepik.com) This website has been designed using image assets from Freepik.com.
-
+[Png Wing:](https://www.pngwing.com) For the beautiful africa map used in the home page.
 
 If I have unintentionally missed anyone who deserves acknowledgment, please let me know, and I will gladly include them.
 
