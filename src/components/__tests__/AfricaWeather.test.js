@@ -15,4 +15,14 @@ describe('AfricaWeather', () => {
 
     expect(screen.getByAltText('Map of Africa')).toBeInTheDocument();
   });
+
+  test('renders the component', () => {
+    render(
+      <Provider store={store}>
+        <AfricaWeather />
+      </Provider>,
+    );
+
+    expect(screen.getByText('Africa')).toBeInTheDocument();
+  });
 });
