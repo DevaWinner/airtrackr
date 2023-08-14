@@ -27,11 +27,4 @@ describe('CityWeather', () => {
     render(<CityWeather city={city} aqi={aqi} />);
     expect(CityWeather).toMatchSnapshot();
   });
-
-  it('should render Cities component', () => {
-    const city = 'Cairo';
-    const aqi = 1;
-    render(<CityWeather city={city} aqi={aqi} />);
-    expect(CityWeather).toMatchSnapshot();
-  });
 });
